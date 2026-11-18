@@ -342,10 +342,12 @@ html[lang="en"] .hero-title { font-weight: 600; letter-spacing: -0.035em; }
 .hero-title-en {
   display: block;
   margin-top: 16px;
-  font-family: var(--font-en-display);
+  font-family: var(--font-en-body) !important; 
   font-size: clamp(1.05rem, 1.7vw, 1.45rem);
-  font-style: italic;
+  font-style: normal !important; 
   font-weight: 600;
+  letter-spacing: 0.02em !important;
+  word-spacing: 2px !important;
   line-height: 1.45;
   color: var(--accent-2);
 }
