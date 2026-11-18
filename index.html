@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="معرض حنين الفني — مساحة للإبداع والخيال. رسومات وأعمال يدوية تعكس الشغف بالفن والتفاصيل.">
+  <meta name="theme-color" content="#fbf8f3">
+  <title>Haneen's Art Space | معرض حنين الفني</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;500;600;700&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('has-theme');
+        var theme = saved || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.dataset.theme = theme;
+      } catch (e) {
+        document.documentElement.dataset.theme = 'light';
+      }
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- ============ Header ============ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#hero" aria-label="Haneen's Art Space">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2.5l1.9 5.6 5.6 1.9-5.6 1.9L12 17.5l-1.9-5.6L4.5 10l5.6-1.9L12 2.5Z"/>
+            <path d="M19 17l.7 2.3L22 20l-2.3.7L19 23l-.7-2.3L16 20l2.3-.7L19 17Z"/>
+          </svg>
+        </span>
+        <span class="brand-name">Haneen's <em>Art Space</em></span>
+      </a>
+
+      <nav class="nav" id="primary-nav" aria-label="القائمة الرئيسية">
+        <a href="#hero">الرئيسية</a>
+        <a href="#about">من أنا</a>
+        <a href="#philosophy">فلسفتي الفنية</a>
+        <a href="#gallery">أعمالي</a>
+        <a href="#contact">تواصل معي</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="lang-switch" href="en.html" lang="en" hreflang="en" aria-label="Switch to English">
+          EN
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M5 12h14M13 6l6 6-6 6"/>
+          </svg>
+        </a>
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="تفعيل الوضع الليلي" aria-pressed="false">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M20.5 14.4A8.6 8.6 0 0 1 9.6 3.5a8.6 8.6 0 1 0 10.9 10.9Z"/>
+          </svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+          </svg>
+        </button>
+        <button class="icon-btn menu-toggle" id="menu-toggle" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="primary-nav">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true">
+            <path d="M4 7h16M4 12h16M4 17h16"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ Hero ============ -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">مساحة حنين للفن ✦ Haneen's Art Space</span>
+
+          <h1 class="hero-title">
+            معرض حنين الفني
+            <span class="accent-text">مساحة للإبداع والخيال</span>
+            <span class="hero-title-en">Haneen's Art Gallery | A Space for Creativity &amp; Imagination</span>
+          </h1>
+
+          <p class="hero-lead">مرحبًا بكم في عالمي الفني<br>حيث تتحول الأفكار إلى رسومات</p>
+          <p>مساحة أشارك فيها أعمالي الفنية، وأوثّق من خلالها أفكاري وتجربتي مع الألوان والتفاصيل. هنا حيث تتحول الأفكار والخطوط البسيطة إلى لوحات تنبض بالحياة — مجموعة مختارة من رسوماتي وأعمالي اليدوية التي تعكس شغفي بالفن والتفاصيل.</p>
+          <p class="hero-en">Where simple lines and ideas come to life. A curated collection of my illustrations and handmade crafts reflecting my passion for art and detail.</p>
+
+          <div class="hero-actions">
+            <a class="btn btn--primary" href="#gallery">
+              تصفّح أعمالي
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="#contact">تواصل معي</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat"><strong>8</strong><span>أعمال فنية</span></div>
+            <div class="stat"><strong>4</strong><span>أساليب مختلفة</span></div>
+            <div class="stat"><strong>100%</strong><span>لمسة يدوية</span></div>
+          </div>
+        </div>
+
+        <div class="hero-art reveal" aria-label="مجموعة من أعمال حنين الفنية">
+          <div class="hero-frame">
+            <img src="assets/img/jake-pencil-holder.jpg" alt="مقلمة جيك المرسومة يدوياً" width="720" height="900">
+          </div>
+          <div class="hero-float hero-float--one">
+            <img src="assets/img/shaun-the-sheep.jpg" alt="مجسم شون ذا شيب الورقي" loading="lazy">
+          </div>
+          <div class="hero-float hero-float--two">
+            <img src="assets/img/sun-of-imagination.jpg" alt="شمس الخيال والغيوم" loading="lazy">
+          </div>
+          <div class="hero-stamp" aria-hidden="true">made<br>with<br>heart ✦</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ About me ============ -->
+    <section class="section section--tint" id="about">
+      <div class="container about-grid">
+        <div class="about-visual reveal" aria-hidden="true">
+          <div class="about-paper">
+            <div class="about-initial">ح</div>
+            <div class="about-signature">Haneen</div>
+            <p style="margin:14px 0 0;color:var(--muted);font-size:.88rem;">بفرشة صغيرة، وعالم كبير من الأفكار.</p>
+          </div>
+          <div class="hero-float hero-float--two">
+            <img src="assets/img/flow-of-imagination.jpg" alt="" loading="lazy">
+          </div>
+        </div>
+
+        <div class="about-copy reveal">
+          <span class="eyebrow">ABOUT ME</span>
+          <h2 class="section-title">من أنا؟ <span class="fleur">✦</span></h2>
+          <div class="quote-card">
+            <p>أنا حنين، أحب الرسم والتعبير عن الأفكار والمشاعر من خلال الفن. أجد في الرسم مساحة لاستكشاف الخيال، وتجربة الألوان، وتحويل الأفكار البسيطة إلى أعمال تحمل معاني وتفاصيل مختلفة.</p>
+          </div>
+          <p class="about-note">هذا الموقع هو معرضي الشخصي الذي أجمع فيه رسوماتي وتجربتي الفنية، وأشارك من خلاله جزءًا من عالمي.</p>
+          <div class="about-tags">
+            <span class="tag">رسم بالحبر</span>
+            <span class="tag">تظليل بالرصاص</span>
+            <span class="tag">ألوان مائية</span>
+            <span class="tag">أشغال يدوية</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Philosophy ============ -->
+    <section class="section" id="philosophy">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">ABOUT MY ART</span>
+          <h2 class="section-title">فلسفتي الفنية</h2>
+          <p class="philosophy-intro">أؤمن بأن الفن هو لغة التعبير الأصدق؛ لذلك لا أتقيد بأسلوب واحد. تتنوع أعمالي بين دقة التخطيط بالحبر الأسود، ودفء التظليل بالرصاص، وبهجة الألوان المائية، وصولاً إلى تحويل الخامات البسيطة إلى مجسمات وأعمال يدوية مبهجة.</p>
+        </div>
+
+        <div class="medium-grid">
+          <article class="medium-card reveal">
+            <span class="medium-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 2 2-7 7-3 1 1-3Z"/><path d="M16 11l-3-3M4 20h6M3 21l2.5-.5L19 6.5 17.5 5 4.5 18.5 3 21Z"/></svg>
+            </span>
+            <h3>دقة الحبر</h3>
+            <p>خطوط دقيقة وظلال غنية بالتفاصيل تحكي الحكاية.</p>
+          </article>
+          <article class="medium-card reveal">
+            <span class="medium-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l3.5-.7L19 7.8 16.2 5 4.7 16.5 4 20Z"/><path d="M14.7 6.5l2.8 2.8M9 19l-1-1"/></svg>
+            </span>
+            <h3>دفء الرصاص</h3>
+            <p>تدرجات هادئة تمنح الأشكال عمقاً وإحساساً بالحياة.</p>
+          </article>
+          <article class="medium-card reveal">
+            <span class="medium-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3s6 6.4 6 10.2A6 6 0 0 1 6 13.2C6 9.4 12 3 12 3Z"/><path d="M9.5 14.5a2.5 2.5 0 0 0 2.5 2.5"/></svg>
+            </span>
+            <h3>بهجة الألوان</h3>
+            <p>مائيّة وتدرجات دافئة تُضفي على العمل روحاً مرحة.</p>
+          </article>
+          <article class="medium-card reveal">
+            <span class="medium-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l3 5-3 5-3-5 3-5Z"/><path d="M6 13l3 5-3 3-3-3 3-5ZM18 13l3 5-3 3-3-3 3-5Z"/></svg>
+            </span>
+            <h3>خامات مجسّمة</h3>
+            <p>من الورق والكوب إلى مجسمات تلمسها العين قبل اليد.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Gallery ============ -->
+    <section class="section section--tint" id="gallery">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">MY GALLERY</span>
+          <h2 class="section-title">أعمالي الفنية</h2>
+          <p class="section-lead">لكل رسمة حكاية، ولكل لون إحساس مختلف. هنا أجمع مجموعة من أعمالي التي تعكس أفكاري وتجربتي مع الرسم. اضغط على أي عمل لتكتشف تفاصيله.</p>
+        </div>
+
+        <div class="filters reveal" role="group" aria-label="تصفية الأعمال">
+          <button class="filter-btn is-active" type="button" data-filter="all" aria-pressed="true">كل الأعمال</button>
+          <button class="filter-btn" type="button" data-filter="handmade" aria-pressed="false">أشغال يدوية</button>
+          <button class="filter-btn" type="button" data-filter="ink" aria-pressed="false">حبر ورصاص</button>
+          <button class="filter-btn" type="button" data-filter="watercolor" aria-pressed="false">ألوان مائية</button>
+          <button class="filter-btn" type="button" data-filter="color" aria-pressed="false">خيال ولون</button>
+        </div>
+
+        <div class="gallery-grid">
+          <!-- 1 -->
+          <article class="art-card reveal" data-group="handmade"
+            data-image="assets/img/jake-pencil-holder.jpg"
+            data-title-ar="مقلمة &quot;جيك&quot;" data-title-en="Jake Pencil Holder"
+            data-category-ar="أشغال يدوية ورسم على الخامات" data-category-en="Crafts &amp; Painting"
+            data-date-ar="2024" data-date-en="2024"
+            data-tools-ar="كوب معاد تدويره، ألوان أكريليك، فرش رسم، طبقة حماية" data-tools-en="Recycled cup, Acrylic paint, Paintbrushes, Protective varnish"
+            data-desc-ar="إعادة تدوير كوب بسيط وتحويله إلى مقلمة عملية مرسومة يدوياً لشخصية &quot;جيك&quot; بألوان زاهية تضفي لمسة مرحة على المكتب."
+            data-desc-en="Upcycling a simple cup into a hand-painted functional pencil holder featuring &quot;Jake,&quot; adding a cheerful touch to the desk."
+            data-insp-ar="فكرة تحويل شيء يومي بسيط إلى قطعة عملية تحمل شخصية وبهجة، حتى يصبح المكتب نفسه مساحة للإبداع."
+            data-insp-en="Turning an ordinary everyday object into a practical piece full of character, so the desk itself becomes a little space for creativity.">
+            <button class="card-trigger" type="button" aria-label="عرض تفاصيل: مقلمة جيك">
+              <div class="card-media">
+                <img src="assets/img/jake-pencil-holder.jpg" alt="مقلمة جيك المرسومة يدوياً" loading="lazy">
+                <span class="card-category">أشغال يدوية ورسم على الخامات</span>
+              </div>
+              <div class="card-body">
+                <h3>مقلمة "جيك"</h3>
+                <p>إعادة تدوير كوب بسيط وتحويله إلى مقلمة عملية مرسومة يدوياً بألوان زاهية.</p>
+                <span class="card-more">عرض التفاصيل
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
+              </div>
+            </button>
+          </article>
+
+          <!-- 2 -->
+          <article class="art-card reveal" data-group="ink"
+            data-image="assets/img/saudi-hospitality.jpg"
+            data-title-ar="عبق الضيافة السعودية" data-title-en="Saudi Heritage &amp; Hospitality"
+            data-category-ar="تظليل بالرصاص وخط عربي" data-category-en="Graphite &amp; Arabic Calligraphy"
+            data-date-ar="2024" data-date-en="2024"
+            data-tools-ar="قلم رصاص، أداة مزج، ممحاة، حبر أخضر للخط" data-tools-en="Graphite pencil, Blending stump, Eraser, Green calligraphy ink"
+            data-desc-ar="عمل فني يجمع بين دقة التظليل بالرصاص لدلة القهوة العربية والتمر، مع خط عربي أخضر يبرز اسم المملكة العربية السعودية وشعار السيفين."
+            data-desc-en="An artwork combining detailed graphite shading of an Arabic coffee pot (Dallah) and dates with green Arabic calligraphy celebrating Saudi heritage."
+            data-insp-ar="الاحتفاء بالضيافة السعودية ورموزها، ومزج دقة التظليل بجمال الحرف العربي."
+            data-insp-en="Celebrating Saudi hospitality and its symbols by blending precise shading with the beauty of Arabic lettering.">
+            <button class="card-trigger" type="button" aria-label="عرض تفاصيل: عبق الضيافة السعودية">
+              <div class="card-media">
+                <img src="assets/img/saudi-hospitality.jpg" alt="تظليل بالرصاص لدلة القهوة والتمر" loading="lazy">
+                <span class="card-category">تظليل بالرصاص وخط عربي</span>
+              </div>
+              <div class="card-body">
+                <h3>عبق الضيافة السعودية</h3>
+                <p>دلة القهوة والتمر بتظليل رصاصي دقيق، يزينها خط عربي أخضر.</p>
+                <span class="card-more">عرض التفاصيل
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
+              </div>
+            </button>
+          </article>
+
+          <!-- 3 -->
+          <article class="art-card reveal" data-group="handmade"
+            data-image="assets/img/shaun-the-sheep.jpg"
+            data-title-ar="مجسم &quot;شون ذا شيب&quot;" data-title-en="Shaun the Sheep Craft"
+            data-category-ar="مجسمات ورقية يدوية" data-category-en="3D Paper Craft"
+            data-date-ar="2023" data-date-en="2023"
+            data-tools-ar="قصاصات ورق بيضاء وسوداء، قاطعة، غراء، خيط تعليق" data-tools-en="White and black paper strips, Craft knife, Glue, Hanging thread"
+            data-desc-ar="مجسم معلق مصنوع يدوياً بدقة باستخدام قصاصات الورق البيضاء والسوداء لتجسيد شخصية &quot;شون ذا شيب&quot; المحبوبة بأسلوب ثلاثي الأبعاد."
+            data-desc-en="A handcrafted hanging 3D sculpture made carefully from white and black paper strips, bringing the beloved &quot;Shaun the Sheep&quot; to life."
+            data-insp-ar="حبّ شخصية شون وتحويلها من الورق المسطّح إلى مجسم ثلاثي الأبعاد يملأ المكان مرحاً."
+            data-insp-en="A love of Shaun's character, reimagined from flat paper into a playful three-dimensional hanging piece.">
+            <button class="card-trigger" type="button" aria-label="عرض تفاصيل: مجسم شون ذا شيب">
+              <div class="card-media">
+                <img src="assets/img/shaun-the-sheep.jpg" alt="مجسم شون ذا شيب الورقي المعلق" loading="lazy">
+                <span class="card-category">مجسمات ورقية يدوية</span>
+              </div>
+              <div class="card-body">
+                <h3>مجسم "شون ذا شيب"</h3>
+                <p>قصاصات ورق بيضاء وسوداء تصنع شخصية محبوبة بأسلوب ثلاثي الأبعاد.</p>
+                <span class="card-more">عرض التفاصيل
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
+              </div>
+            </button>
+          </article>
+
+          <!-- 4 -->
+          <article class="art-card reveal" data-group="ink"
+            data-image="assets/img/road-trip.jpg"
+            data-title-ar="رحلة الصيف وحقائب السفر" data-title-en="The Road Trip"
+            data-category-ar="رسم بالحبر الأسود" data-category-en="Ink Sketching"
+            data-date-ar="2024" data-date-en="2024"
+            data-tools-ar="أقلام حبر أسود بأحجام مختلفة، تظليل بالخطوط المتقاطعة، ورق رسم" data-tools-en="Black fineliner pens, Cross-hatching, Drawing paper"
+            data-desc-ar="رسم تفصيلي بالحبر يجسد مشهداً مألوفاً ومليئاً بالحنين لسيارة محملة بحقائب وأمتعة السفر في طريق مفتوح، مع التركيز على الظلال وتفاصيل الأمتعة."
+            data-desc-en="A detailed ink sketch capturing a nostalgic scene of a car packed high with luggage on an open road, focusing on textures and deep shadows."
+            data-insp-ar="ذكريات الرحلات الصيفية والطرق الطويلة، ولحظة التجهيز والترقب قبل الانطلاق."
+            data-insp-en="Summer road-trip memories, long open roads, and the quiet anticipation before departure.">
+            <button class="card-trigger" type="button" aria-label="عرض تفاصيل: رحلة الصيف وحقائب السفر">
+              <div class="card-media">
+                <img src="assets/img/road-trip.jpg" alt="رسم بالحبر لسيارة محملة بحقائب السفر" loading="lazy">
+                <span class="card-category">رسم بالحبر الأسود</span>
+              </div>
+              <div class="card-body">
+                <h3>رحلة الصيف وحقائب السفر</h3>
+                <p>سيارة محملة بالأمتعة على طريق مفتوح، بتفاصيل حبر وظلال عميقة.</p>
+                <span class="card-more">عرض التفاصيل
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
+              </div>
+            </button>
+          </article>
+
+          <!-- 5 -->
+          <article class="art-card reveal" data-group="watercolor"
+            data-image="assets/img/jobs-watercolor.jpg"
+            data-title-ar="مهن في عالمنا" data-title-en="Different Jobs in Our World"
+            data-category-ar="ألوان مائية وتصميم تعليمي" data-category-en="Watercolor &amp; Educational Art"
+            data-date-ar="2023" data-date-en="2023"
+            data-tools-ar="ألوان مائية، أقلام تحديد، ملصقات ثلاثية الأبعاد، فرش ناعمة" data-tools-en="Watercolors, Outline markers, 3D stickers, Soft brushes"
+            data-desc-ar="لوحة تعليمية مبهجة بدمج الألوان المائية والرسومات البارزة (3D Stickers) للتعريف بالمهن المختلفة (الطيار، الطاهي، رائد الفضاء، والطبيبة) بأسلوب كرتوني لطيف."
+            data-desc-en="A cheerful educational illustration blending soft watercolors with pop-up character doodles to introduce different professions (Pilot, Chef, Astronaut, and Doctor)."
+            data-insp-ar="جعل التعريف بالمهن تجربة بصرية ممتعة للأطفال، حيث تلتقي الفكرة البسيطة بلون دافئ وشخصية لطيفة."
+            data-insp-en="Making learning about professions fun for children through warm color and friendly cartoon characters.">
+            <button class="card-trigger" type="button" aria-label="عرض تفاصيل: مهن في عالمنا">
+              <div class="card-media">
+                <img src="assets/img/jobs-watercolor.jpg" alt="لوحة مائية تعليمية عن المهن المختلفة" loading="lazy">
+                <span class="card-category">ألوان مائية وتصميم تعليمي</span>
+              </div>
+              <div class="card-body">
+                <h3>مهن في عالمنا</h3>
+                <p>ألوان مائية وملصقات بارزة للتعريف بالطيار والطاهي ورائد الفضاء والطبيبة.</p>
+                <span class="card-more">عرض التفاصيل
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
+              </div>
+            </button>
+          </article>
+
+          <!-- 6 -->
+          <article class="art-card reveal" data-group="ink"
+            data-image="assets/img/alley-of-memories.jpg"
+            data-title-ar="زقاق الذكريات والكلمات" data-title-en="Alley of Memories &amp; Quotes"
+            data-category-ar="رسم معماري بالحبر" data-category-en="Architectural Ink Drawing"
+            data-date-ar="2024" data-date-en="2024"
+            data-tools-ar="حبر أسود، أقلام دقيقة، تظليل بالخطوط، ورق رسم" data-tools-en="Black ink, Fine liner pens, Line shading, Drawing paper"
+            data-desc-ar="رسم دقيق لمبنى قديم مليء بالتفاصيل المعمارية والنباتات، تتخلله لافتات تحمل عبارات ملهمة بالخط العربي تبعث على التفاؤل والأمل."
+            data-desc-en="An intricate ink illustration of a vintage street corner filled with architectural details, plants, and Arabic street signs carrying inspiring quotes of hope."
+            data-insp-ar="جمال الزوايا القديمة وتفاصيلها، والكلمات التي نصادفها في الطريق فتغيّر يومنا."
+            data-insp-en="The charm of old street corners and the encouraging words we stumble upon along the way.">
+            <button class="card-trigger" type="button" aria-label="عرض تفاصيل: زقاق الذكريات والكلمات">
+              <div class="card-media">
+                <img src="assets/img/alley-of-memories.jpg" alt="رسم حبر لمبنى قديم ولافتات بعبارات ملهمة" loading="lazy">
+                <span class="card-category">رسم معماري بالحبر</span>
+              </div>
+              <div class="card-body">
+                <h3>زقاق الذكريات والكلمات</h3>
+                <p>تفاصيل معمارية ونباتات ولافتات تحمل عبارات أمل بالخط العربي.</p>
+                <span class="card-more">عرض التفاصيل
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
+              </div>
+            </button>
+          </article>
+
+          <!-- 7 -->
+          <article class="art-card reveal" data-group="color"
+            data-image="assets/img/sun-of-imagination.jpg"
+            data-title-ar="شمس الخيال والغيوم" data-title-en="Sun of Imagination &amp; Clouds"
+            data-category-ar="فن سريالي وألوان" data-category-en="Surreal Art &amp; Illustration"
+            data-date-ar="2025" data-date-en="2025"
+            data-tools-ar="ألوان مائية، أقلام ملونة، حبر، تدرجات لونية" data-tools-en="Watercolors, Colored pencils, Ink, Color gradients"
+            data-desc-ar="لوحة خيالية نابضة بالألوان تجمع بين خطوط الشمس الملتفة، زرقة السماء العميقة، وكائنات لطيفة تطل من بين الغيوم بأسلوب فني مميز."
+            data-desc-en="An imaginative, colorful piece blending swirling sunbeams, a deep blue sky, and whimsical creatures peeking through the clouds."
+            data-insp-ar="لحظة تأمل في السماء، حيث تتحول الغيوم إلى كائنات والشمس إلى دوائر لا تنتهي من الخيال."
+            data-insp-en="A moment of daydreaming beneath the sky, where clouds become creatures and sunlight turns into endless swirls.">
+            <button class="card-trigger" type="button" aria-label="عرض تفاصيل: شمس الخيال والغيوم">
+              <div class="card-media">
+                <img src="assets/img/sun-of-imagination.jpg" alt="لوحة سريالية لشمس وغيوم وكائنات لطيفة" loading="lazy">
+                <span class="card-category">فن سريالي وألوان</span>
+              </div>
+              <div class="card-body">
+                <h3>شمس الخيال والغيوم</h3>
+                <p>أشعة شمس ملتفة وسماء زرقاء عميقة وكائنات تطل من الغيوم.</p>
+                <span class="card-more">عرض التفاصيل
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
+              </div>
+            </button>
+          </article>
+
+          <!-- 8 -->
+          <article class="art-card reveal" data-group="color"
+            data-image="assets/img/flow-of-imagination.jpg"
+            data-title-ar="انسيابية الخيال واللون" data-title-en="Flow of Imagination &amp; Color"
+            data-category-ar="ألوان خشبية وحبر" data-category-en="Colored Pencils &amp; Ink"
+            data-date-ar="2025" data-date-en="2025"
+            data-tools-ar="أقلام ملونة، حبر أزرق، خط عربي، تدرجات دافئة" data-tools-en="Colored pencils, Blue ink, Arabic calligraphy, Warm gradients"
+            data-desc-ar="لوحة سريالية تجمع بين تدرجات الألوان الدافئة المنسابة وتفاصيل الأسماك المرسومة بالحبر الأزرق، تتداخل معها عبارة شعرية بالخط العربي تُجسد أحلام الخيال وتأملاته."
+            data-desc-en="A surreal artwork blending flowing warm colored-pencil gradients with intricate blue-ink fish illustrations, interwoven with poetic Arabic calligraphy capturing the essence of imagination and daydreams."
+            data-insp-ar="انسياب الأفكار كالماء، وسباحة الأحلام بين الأسماك والكلمات."
+            data-insp-en="Thoughts flowing like water, and dreams swimming between fish and words.">
+            <button class="card-trigger" type="button" aria-label="عرض تفاصيل: انسيابية الخيال واللون">
+              <div class="card-media">
+                <img src="assets/img/flow-of-imagination.jpg" alt="لوحة تدرجات دافئة وأسماك بالحبر الأزرق وخط عربي" loading="lazy">
+                <span class="card-category">ألوان خشبية وحبر</span>
+              </div>
+              <div class="card-body">
+                <h3>انسيابية الخيال واللون</h3>
+                <p>تدرجات دافئة وأسماك بالحبر الأزرق تتخللها عبارة شعرية بالخط العربي.</p>
+                <span class="card-more">عرض التفاصيل
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                </span>
+              </div>
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ Contact ============ -->
+    <section class="section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <span class="eyebrow">CONTACT &amp; COMMISSIONS</span>
+          <h2 class="section-title">تواصل واطلب عملك الخاص</h2>
+          <p>هل أعجبك أحد الأعمال أو ترغب بطلب رسمة خاصة؟ يسعدني تواصلك ومشاركة رأيك حول معرضي.</p>
+          <ul class="contact-list">
+            <li>
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              </span>
+              <span><strong>رسالة منك</strong><span>اكتب لي ما ألهمك أو ما تود أن تراه هنا.</span></span>
+            </li>
+            <li>
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 5.6 5.6 1.9-5.6 1.9L12 18l-1.9-5.6-5.6-1.9 5.6-1.9L12 3Z"/><path d="M19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8L19 16Z"/></svg>
+              </span>
+              <span><strong>طلبات الأعمال الخاصة</strong><span>شاركاني فكرتك والألوان والمقاس الذي تحبه.</span></span>
+            </li>
+            <li>
+              <span class="contact-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg>
+              </span>
+              <span><strong>عربي وإنجليزي</strong><span>يمكنك مراسلتي باللغة التي تفضلها، أو زيارة النسخة الإنجليزية من الموقع.</span></span>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact-form reveal" id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="field-name">الاسم</label>
+              <input id="field-name" name="name" type="text" autocomplete="name" placeholder="اسمك الكريم" required>
+            </div>
+            <div class="field">
+              <label for="field-email">البريد الإلكتروني</label>
+              <input id="field-email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="field-message">رسالتك</label>
+            <textarea id="field-message" name="message" placeholder="اكتب رسالتك أو فكرة عملك هنا..." required></textarea>
+          </div>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          <button class="btn btn--primary" type="submit">
+            إرسال الرسالة
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4 20-7Z"/><path d="M22 2 11 13"/></svg>
+          </button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ Footer ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <a class="brand" href="#hero">
+            <span class="brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.5l1.9 5.6 5.6 1.9-5.6 1.9L12 17.5l-1.9-5.6L4.5 10l5.6-1.9L12 2.5Z"/><path d="M19 17l.7 2.3L22 20l-2.3.7L19 23l-.7-2.3L16 20l2.3-.7L19 17Z"/></svg>
+            </span>
+            <span class="brand-name">Haneen's <em>Art Space</em></span>
+          </a>
+          <p>مساحة للإبداع والخيال، حيث تتحول الخطوط البسيطة إلى لوحات تنبض بالحياة.</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>استكشف</h4>
+            <a href="#about">من أنا</a>
+            <a href="#philosophy">فلسفتي الفنية</a>
+            <a href="#gallery">أعمالي الفنية</a>
+            <a href="#contact">تواصل معي</a>
+          </div>
+          <div class="footer-col">
+            <h4>اللغة</h4>
+            <a href="en.html" lang="en" hreflang="en">English Version →</a>
+            <a href="#hero">العودة للأعلى</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> Haneen's Art Space. جميع الحقوق محفوظة.</span>
+        <span>صُنع بشغف <span class="fleur">✦</span> وحب بالتفاصيل</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" id="to-top" type="button" aria-label="العودة إلى الأعلى">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+  </button>
+
+  <!-- ============ Artwork details dialog ============ -->
+  <dialog class="art-dialog" id="art-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-shell">
+      <button class="dialog-close" id="dialog-close" type="button" aria-label="إغلاق النافذة">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+      <div class="dialog-media">
+        <img id="dialog-image" src="" alt="" width="1066" height="1280">
+      </div>
+      <div class="dialog-content">
+        <span class="dialog-category" id="dialog-category"></span>
+        <h2 class="dialog-title" id="dialog-title"></h2>
+
+        <div class="dialog-meta">
+          <div><span id="label-date">تاريخ الإنجاز</span><strong id="dialog-date"></strong></div>
+        </div>
+
+        <div class="dialog-block">
+          <h3 id="label-description">وصف العمل</h3>
+          <p id="dialog-desc"></p>
+        </div>
+        <div class="dialog-block">
+          <h3 id="label-inspiration">الفكرة والإلهام</h3>
+          <p id="dialog-insp"></p>
+        </div>
+        <div class="dialog-block">
+          <h3 id="label-tools">الأدوات المستخدمة</h3>
+          <div class="dialog-tools" id="dialog-tools"></div>
+        </div>
+
+        <div class="dialog-nav">
+          <button id="prev-art" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg><span>السابق</span></button>
+          <span class="dialog-counter" id="dialog-counter"></span>
+          <button id="next-art" type="button"><span>التالي</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
