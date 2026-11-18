@@ -6,29 +6,30 @@
 :root {
   color-scheme: light;
 
-  --bg: #fbf8f3;
-  --bg-2: #f4eee5;
-  --surface: #ffffff;
-  --surface-2: #f8f3ec;
-  --text: #242730;
-  --text-strong: #171a22;
-  --muted: #746d66;
-  --line: rgba(36, 39, 48, 0.12);
-  --line-strong: rgba(36, 39, 48, 0.2);
+  --bg: #fffbea;            
+  --bg-alt: #f5f7e8;     
+  --surface: #ffffff;       
+  --surface-2: #fff9df;
+  --text: #394523;         
+  --text-strong: #262e17; 
+  --muted: #77815f;         
+  --line: rgba(57, 69, 35, 0.14);
+  --line-strong: rgba(57, 69, 35, 0.25);
 
-  --accent: #b25b6b;
-  --accent-2: #2f7276;
-  --accent-soft: rgba(178, 91, 107, 0.11);
-  --accent-2-soft: rgba(47, 114, 118, 0.1);
-  --gold: #c69a5d;
+  --accent: #789b35;        
+  --accent-2: #143c78;     
+  --accent-soft: rgba(120, 155, 53, 0.14);
+  --accent-2-soft: rgba(20, 60, 120, 0.1);
+  --gold: #e6c443;           
+  --red: #c14528;           
 
-  --shadow-sm: 0 6px 20px rgba(52, 36, 26, 0.07);
-  --shadow-md: 0 18px 45px rgba(52, 36, 26, 0.11);
-  --shadow-lg: 0 30px 80px rgba(30, 21, 15, 0.22);
+  --shadow-sm: 0 6px 20px rgba(57, 69, 35, 0.08);
+  --shadow-md: 0 18px 45px rgba(57, 69, 35, 0.12);
+  --shadow-lg: 0 30px 80px rgba(38, 46, 23, 0.22);
 
   --radius-sm: 12px;
   --radius-md: 20px;
-  --radius-lg: 32px;
+  --radius-lg: 28px;
 
   --header-h: 78px;
   --font-ar: "Tajawal", "Segoe UI", Tahoma, sans-serif;
@@ -42,26 +43,29 @@
 :root[data-theme="dark"] {
   color-scheme: dark;
 
-  --bg: #0e1219;
-  --bg-2: #131922;
-  --surface: #181f29;
-  --surface-2: #1e2632;
-  --text: #eee8df;
-  --text-strong: #fbf6ee;
-  --muted: #a9a29a;
-  --line: rgba(238, 232, 223, 0.14);
-  --line-strong: rgba(238, 232, 223, 0.24);
+  --bg: #121622;             /* خلفية ليلية عميقة ونظيفة */
+  --bg-2: #181f2e;           /* خلفية بديلة متناسقة للأقسام */
+  --surface: #1e263a;        /* خلفية البطاقات بدرجة واضحة وجميلة */
+  --surface-2: #252f47;
+  --text: #fef6e4;           /* نص كريمي ناصع وواضح */
+  --text-strong: #ffffff;    /* عناوين بيضاء ناصعة */
+  --muted: #a4b0c5;          /* لون النصوص الثانوية مريح للعين */
+  --line: rgba(254, 246, 228, 0.14);
+  --line-strong: rgba(254, 246, 228, 0.25);
 
-  --accent: #e7a098;
-  --accent-2: #83bdb6;
-  --accent-soft: rgba(231, 160, 152, 0.14);
-  --accent-2-soft: rgba(131, 189, 182, 0.12);
-  --gold: #dcb67d;
+  /* درجات الألوان المتناسقة في الوضع الليلي */
+  --accent: #86b039;         /* أخضر زيتوني دافئ ومشرق (مناسب لهويتك) */
+  --accent-2: #60a5fa;       /* أزرق ليلي هادئ */
+  --accent-soft: rgba(134, 176, 57, 0.18);
+  --accent-2-soft: rgba(96, 165, 250, 0.15);
+  --gold: #f4d75e;           /* أصفر ذهبي دافئ للتمييز */
+  --red: #f87171;            /* أحمر هادئ للوضع الليلي */
 
-  --shadow-sm: 0 6px 20px rgba(0, 0, 0, 0.25);
-  --shadow-md: 0 18px 45px rgba(0, 0, 0, 0.35);
-  --shadow-lg: 0 30px 80px rgba(0, 0, 0, 0.55);
+  --shadow-sm: 0 6px 20px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 18px 45px rgba(0, 0, 0, 0.6);
+  --shadow-lg: 0 30px 80px rgba(0, 0, 0, 0.8);
 }
+
 
 html[lang="en"] {
   --font-display: var(--font-en-display);
@@ -1001,3 +1005,89 @@ html[dir="rtl"] .dialog-nav #next-art svg { transform: scaleX(-1); }
   .reveal { opacity: 1; transform: none; }
   body { background: #fff; color: #000; }
 }
+
+/* ---------- لمسات مطابقة للمشروع السابق ---------- */
+/* الشريط المتدرج أسفل الهيدر */
+.site-header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  inset-inline: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #789b35, #a9c94a, #f4d75e, #e6c443);
+}
+
+:root[data-theme="dark"] .site-header::after {
+  background: linear-gradient(90deg, #a3e635, #60a5fa, #f4d75e, #fbbf24);
+}
+
+/* الأزرار في الوضع النهاري */
+.btn--primary {
+  background: #526b2a;
+  color: #fffbea;
+  border: 2px solid #526b2a;
+  box-shadow: 0 4px 12px rgba(57, 69, 35, 0.2);
+}
+.btn--primary:hover {
+  background: #394523;
+  border-color: #394523;
+  color: #fff;
+}
+
+.btn--ghost {
+  background: #f4d75e;
+  color: #394523;
+  border: 2px solid #d6b63d;
+  box-shadow: 0 4px 12px rgba(57, 69, 35, 0.12);
+}
+.btn--ghost:hover {
+  background: #e6c443;
+  border-color: #c5a32a;
+  color: #262e17;
+}
+
+/* الأزرار في الوضع الليلي */
+:root[data-theme="dark"] .btn--primary {
+  background: #394523;
+  color: #fef6e4;
+  border: 2px solid #526b2a;
+}
+:root[data-theme="dark"] .btn--primary:hover {
+  background: #2b351a;
+  border-color: #789b35;
+}
+
+:root[data-theme="dark"] .btn--ghost {
+  background: #b89628;
+  color: #111625;
+  border: 2px solid #92751d;
+}
+:root[data-theme="dark"] .btn--ghost:hover {
+  background: #9c7e1e;
+  color: #090d16;
+}
+
+/* تخصيص ألوان أزرار الفلترة في المعرض */
+.filter-btn[data-filter="handmade"] {
+  border-color: var(--accent-2); /* الأزرق */
+  color: var(--accent-2);
+}
+.filter-btn[data-filter="handmade"].is-active {
+  background: var(--accent-2);
+  color: #fff;
+}
+
+.filter-btn[data-filter="watercolor"] {
+  border-color: var(--red); /* الأحمر */
+  color: var(--red);
+}
+.filter-btn[data-filter="watercolor"].is-active {
+  background: var(--red);
+  color: #fff;
+}
+
+/* تلوين أيقونات فلسفتي الفنية بالألوان المطلوبة */
+.medium-card:nth-child(1) .medium-icon { color: var(--accent); background: var(--accent-soft); } /* أخضر */
+.medium-card:nth-child(2) .medium-icon { color: var(--accent-2); background: var(--accent-2-soft); } /* أزرق */
+.medium-card:nth-child(3) .medium-icon { color: var(--red); background: rgba(193, 69, 40, 0.1); } /* أحمر */
+.medium-card:nth-child(4) .medium-icon { color: var(--gold); background: rgba(230, 196, 67, 0.15); } /* أصفر */
