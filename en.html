@@ -122,7 +122,18 @@
       <div class="container about-grid">
         <div class="about-copy reveal">
           <span class="eyebrow">ABOUT ME</span>
-          <h2 class="section-title">Who Am I? <span class="fleur">✦</span></h2>
+          <h2 class="section-title" style="display: flex; align-items: center; justify-content: flex-start; gap: 10px;">
+            <span class="fleur" aria-hidden="true" style="display: inline-flex; vertical-align: middle;">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/>
+                <circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/>
+                <circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/>
+                <circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/>
+                <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/>
+              </svg>
+            </span>
+            <span>Who Am I?</span>
+          </h2>
           <div class="quote-card">
             <p>I'm Haneen. I love drawing and expressing ideas and feelings through art. I find in drawing a space to explore my imagination, experiment with colors, and turn simple ideas into works that carry different meanings and details.</p>
           </div>
@@ -134,19 +145,20 @@
             <span class="tag">Handmade crafts</span>
           </div>
         </div>
-
-        <div class="about-visual reveal" aria-hidden="true">
-          <div class="about-paper">
-            <div class="about-initial">ح</div>
-            <div class="about-signature">Haneen</div>
-            <p style="margin:14px 0 0;color:var(--muted);font-size:.88rem;">A small brush, and a big world of ideas.</p>
+        <div class="about-paper">
+          <div class="about-art-badge" style="width: 55px; height: 55px; margin-bottom: 14px; border-radius: 16px; display: grid; place-items: center; background: var(--accent-soft); color: var(--accent); border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);">
+            <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="13.5" cy="6.5" r=".6" fill="currentColor"/>
+              <circle cx="17.5" cy="10.5" r=".6" fill="currentColor"/>
+              <circle cx="8.5" cy="7.5" r=".6" fill="currentColor"/>
+              <circle cx="6.5" cy="12.5" r=".6" fill="currentColor"/>
+              <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/>
+            </svg>
           </div>
-          <div class="hero-float hero-float--two">
-            <img src="assets/img/flow-of-imagination.jpg" alt="" loading="lazy">
-          </div>
+          <div class="about-signature" style="font-size: 2.4rem; font-weight: 700;">Haneen's Art</div>
+          <p style="margin: 12px 0 0; color: var(--muted); font-size: 0.95rem; font-weight: 500; line-height: 1.7;">A small brush, and a big world of ideas.</p>
         </div>
-      </div>
-    </section>
+      </section>
 
     <!-- ============ Philosophy ============ -->
     <section class="section" id="philosophy">
