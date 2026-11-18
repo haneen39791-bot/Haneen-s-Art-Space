@@ -1127,3 +1127,13 @@ html[dir="rtl"] .dialog-nav #next-art svg { transform: scaleX(-1); }
 .medium-card:nth-child(3) .medium-icon { color: var(--red); background: rgba(193, 69, 40, 0.1); } /* أحمر */
 .medium-card:nth-child(4) .medium-icon { color: var(--gold); background: rgba(230, 196, 67, 0.15); } /* أصفر */
 
+/* تفعيل التمرير داخل نافذة تفاصيل العمل الفني */
+.art-dialog {
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.dialog-content {
+  max-height: 82vh;
+  overflow-y: auto;
+}
