@@ -500,6 +500,34 @@ html[lang="en"] .hero-en { display: none; }
   color: var(--text-strong);
   margin-top: 6px;
 }
+/* خلفية النحل لقسم "من أنا؟" */
+#about {
+  position: relative;
+  overflow: hidden;
+}
+
+#about::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../img/bees.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.14; /* شفافية هادئة في الوضع النهاري ليبقى الكلام واضحاً */
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* تقليل الشفافية قليلاً في الوضع الليلي حتى لا تسطع الخلفية */
+:root[data-theme="dark"] #about::before {
+  opacity: 0.08;
+}
+
+/* رفع محتوى القسم فوق الخلفية */
+#about .container {
+  position: relative;
+  z-index: 1;
+}
 .about-visual .hero-float--two { inset-inline-end: -2px; bottom: 0; width: 36%; }
 .about-visual .hero-float--two img { height: 130px; }
 
