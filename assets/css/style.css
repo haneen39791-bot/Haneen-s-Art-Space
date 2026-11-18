@@ -330,13 +330,17 @@ html[lang="en"] .nav a { font-size: 0.86rem; letter-spacing: 0.01em; }
 }
 
 .hero-title {
-  font-family: var(--font-display);
+  font-family: var(--font-ar);
   font-size: clamp(2.7rem, 5.6vw, 4.7rem);
   line-height: 1.14;
   font-weight: 700;
   color: var(--text-strong);
   margin: 20px 0 0;
-}
+}/*
+html[lang="ar"] .hero-title-en {
+  font-family: var(--font-ar) !important;
+  font-weight: 700;
+}*/
 html[lang="en"] .hero-title { font-weight: 600; letter-spacing: -0.035em; }
 .hero-title .accent-text { display: block; }
 .hero-title-en {
@@ -453,7 +457,8 @@ html[lang="en"] .hero-en { display: none; }
   display: grid;
   place-items: center;
   text-align: center;
-  font-family: var(--font-en-display);
+  /*font-family: var(--font-en-display);*/
+  font-family: var(--font-ar);
   font-size: 0.82rem;
   font-weight: 700;
   line-height: 1.15;
@@ -1121,3 +1126,4 @@ html[dir="rtl"] .dialog-nav #next-art svg { transform: scaleX(-1); }
 .medium-card:nth-child(2) .medium-icon { color: var(--accent-2); background: var(--accent-2-soft); } /* أزرق */
 .medium-card:nth-child(3) .medium-icon { color: var(--red); background: rgba(193, 69, 40, 0.1); } /* أحمر */
 .medium-card:nth-child(4) .medium-icon { color: var(--gold); background: rgba(230, 196, 67, 0.15); } /* أصفر */
+
